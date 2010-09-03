@@ -54,7 +54,7 @@ DateTime.class_eval do
   def to_time
     Time.mktime(year, mon, day, hour, min, sec)
   end
-end
+end if Object.const_defined? :DateTime
 
 Date.class_eval do
   def slashed

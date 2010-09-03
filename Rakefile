@@ -6,8 +6,8 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "fcg-core-ext"
-    gem.summary = 'FCG class extensions and methods altered'
-    gem.description = 'FCG class extensions and methods altered'
+    gem.summary = 'FCG Core Extensions'
+    gem.description = 'Ruby classes and methods altered'
     gem.email = "sam@fcgmedia.com"
     gem.homepage = "http://github.com/joemocha/fcg-core-ext"
     gem.authors = ["Samuel O. Obukwelu"]

@@ -5,12 +5,12 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fcg-core-ext}
-  s.version = "0.0.0"
+  s.version = "0.0.1"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Samuel O. Obukwelu"]
-  s.date = %q{2010-09-02}
-  s.description = %q{FCG class extensions and methods altered}
+  s.date = %q{2010-09-03}
+  s.description = %q{Ruby classes and methods altered}
   s.email = %q{sam@fcgmedia.com}
   s.extra_rdoc_files = [
     "LICENSE",
@@ -22,7 +22,15 @@ Gem::Specification.new do |s|
      "LICENSE",
      "README.rdoc",
      "Rakefile",
+     "fcg-core-ext.gemspec",
      "lib/fcg-core-ext.rb",
+     "lib/fcg-core-ext/array.rb",
+     "lib/fcg-core-ext/hash.rb",
+     "lib/fcg-core-ext/integer.rb",
+     "lib/fcg-core-ext/string.rb",
+     "lib/fcg-core-ext/time_utils.rb",
+     "lib/fcg-core-ext/utils.rb",
+     "lib/fcg-core-ext/version.rb",
      "test/helper.rb",
      "test/test_fcg-core-ext.rb"
   ]
@@ -30,7 +38,7 @@ Gem::Specification.new do |s|
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.3.7}
-  s.summary = %q{FCG class extensions and methods altered}
+  s.summary = %q{FCG Core Extensions}
   s.test_files = [
     "test/helper.rb",
      "test/test_fcg-core-ext.rb"
