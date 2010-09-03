@@ -1,17 +1,19 @@
 require 'rubygems'
 require 'rake'
+require 'lib/fcg-core-ext/version.rb'
 
 begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "fcg-core-ext"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = 'FCG class extensions and methods altered'
+    gem.description = 'FCG class extensions and methods altered'
     gem.email = "sam@fcgmedia.com"
     gem.homepage = "http://github.com/joemocha/fcg-core-ext"
     gem.authors = ["Samuel O. Obukwelu"]
     gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
+    gem.version = FcgCoreExt::VERSION
   end
   Jeweler::GemcutterTasks.new
 rescue LoadError
