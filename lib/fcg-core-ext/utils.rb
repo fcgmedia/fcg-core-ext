@@ -36,7 +36,7 @@ module FCG
         render :json => objekt
       end
   
-      def log(msg, )
+      def log(msg)
         Rails.logger.debug  "### #{msg}"
       end
   
