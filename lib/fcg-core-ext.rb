@@ -1,3 +1,8 @@
+require "rubygems"
+require 'yajl/json_gem'
+require 'hashie'
+include Hashie::HashExtensions
+
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 
 Dir[
