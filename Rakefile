@@ -11,7 +11,10 @@ begin
     gem.email = "sam@fcgmedia.com"
     gem.homepage = "http://github.com/joemocha/fcg-core-ext"
     gem.authors = ["Samuel O. Obukwelu"]
-    gem.add_development_dependency "thoughtbot-shoulda", ">= 0"
+    gem.add_development_dependency "thoughtbot-shoulda", ">= 2.11.1"
+    gem.add_dependency "andand", ">= 1.3.1"
+    gem.add_dependency "hashie", ">= 0.4.0"
+    
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
     gem.version = FcgCoreExt::VERSION
   end

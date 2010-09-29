@@ -70,4 +70,4 @@ Date.class_eval do
     d << self.year unless self.year == Time.now.year
     d.join(separator)
   end
-end
+end if Object.const_defined? :Date
