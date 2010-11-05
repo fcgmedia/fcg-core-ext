@@ -21,7 +21,7 @@ module FCG
 
       def parse_time(date_time)
         d = Time.parse date_time.to_s
-        DateTime.new(d.year, d.mon, d.day, d.hour, d.min)
+        Time.new(d.year, d.mon, d.day, d.hour, d.min)
       end
 
     	def generate_challenge( len=32, extra=[] )

@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fcg-core-ext}
-  s.version = "0.0.4"
+  s.version = "0.0.5"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Samuel O. Obukwelu"]
-  s.date = %q{2010-09-29}
+  s.date = %q{2010-11-02}
   s.description = %q{Ruby classes and methods altered}
   s.email = %q{sam@fcgmedia.com}
   s.extra_rdoc_files = [
@@ -54,17 +54,26 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<andand>, [">= 1.3.1"])
       s.add_runtime_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_runtime_dependency(%q<hashie>, [">= 0.4.0"])
+      s.add_runtime_dependency(%q<msgpack>, [">= 0.4.3"])
+      s.add_runtime_dependency(%q<facets>, [">= 2.8.4"])
+      s.add_runtime_dependency(%q<thor>, [">= 0.14.3"])
     else
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 2.11.1"])
       s.add_dependency(%q<andand>, [">= 1.3.1"])
       s.add_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_dependency(%q<hashie>, [">= 0.4.0"])
+      s.add_dependency(%q<msgpack>, [">= 0.4.3"])
+      s.add_dependency(%q<facets>, [">= 2.8.4"])
+      s.add_dependency(%q<thor>, [">= 0.14.3"])
     end
   else
     s.add_dependency(%q<thoughtbot-shoulda>, [">= 2.11.1"])
     s.add_dependency(%q<andand>, [">= 1.3.1"])
     s.add_dependency(%q<yajl-ruby>, [">= 0"])
     s.add_dependency(%q<hashie>, [">= 0.4.0"])
+    s.add_dependency(%q<msgpack>, [">= 0.4.3"])
+    s.add_dependency(%q<facets>, [">= 2.8.4"])
+    s.add_dependency(%q<thor>, [">= 0.14.3"])
   end
 end
 

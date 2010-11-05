@@ -57,6 +57,10 @@ DateTime.class_eval do
 end if Object.const_defined? :DateTime
 
 Date.class_eval do
+  def db
+    self.strftime("%Y-%m-%d")
+  end
+
   def slashed
     self.strftime("%m/%d/%Y")
   end
