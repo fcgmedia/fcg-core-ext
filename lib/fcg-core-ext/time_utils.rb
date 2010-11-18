@@ -57,6 +57,10 @@ DateTime.class_eval do
 end if Object.const_defined? :DateTime
 
 Date.class_eval do
+  def to_i
+    self.strftime("%Y%m%d").to_i
+  end
+  
   def db
     self.strftime("%Y-%m-%d")
   end
