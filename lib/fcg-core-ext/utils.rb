@@ -54,17 +54,17 @@ module FCG
           ajax_response *args
         end
   
-        def failure_response(objekt)
+        def failure_response(objekt, opts = {})
           if objekt.respond_to?(:errors)
-            ajax_response({:errors => objekt.errors})
+            ajax_response({:errors => objekt.errors}, opts.reverse_merge(:status => :unprocessable_entity))
           else
-            ajax_response objekt
+            ajax_response objekt, opts.reverse_merge(:status => 500)
           end
         end
   
-        def ajax_response(objekt)
+        def ajax_response(objekt, opts = {})
           objekt.merge!(:server_time => Time.now.utc.to_s(:rfc822))
-          render :json => objekt
+          render :json => objekt, :status => (opts[:status] || :ok)
         end
   
         def log(msg)
