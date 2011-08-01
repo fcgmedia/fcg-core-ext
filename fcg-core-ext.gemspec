@@ -5,7 +5,7 @@
 
 Gem::Specification.new do |s|
   s.name = %q{fcg-core-ext}
-  s.version = "0.0.9"
+  s.version = "0.0.10"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Samuel O. Obukwelu"]
@@ -26,10 +26,7 @@ Gem::Specification.new do |s|
      "Rakefile",
      "fcg-core-ext.gemspec",
      "lib/fcg-core-ext.rb",
-     "lib/fcg-core-ext/array.rb",
-     "lib/fcg-core-ext/hash.rb",
      "lib/fcg-core-ext/integer.rb",
-     "lib/fcg-core-ext/object.rb",
      "lib/fcg-core-ext/string.rb",
      "lib/fcg-core-ext/time_utils.rb",
      "lib/fcg-core-ext/utils.rb",
@@ -37,7 +34,7 @@ Gem::Specification.new do |s|
      "test/helper.rb",
      "test/test_fcg-core-ext.rb"
   ]
-  s.homepage = %q{http://github.com/joemocha/fcg-core-ext}
+  s.homepage = %q{http://github.com/fcgmedia/fcg-core-ext}
   s.rdoc_options = ["--charset=UTF-8"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.7.2}
@@ -55,16 +52,12 @@ Gem::Specification.new do |s|
       s.add_runtime_dependency(%q<andand>, [">= 1.3.1"])
       s.add_runtime_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_runtime_dependency(%q<hashie>, [">= 0.4.0"])
-      s.add_runtime_dependency(%q<msgpack>, [">= 0.4.3"])
-      s.add_runtime_dependency(%q<facets>, [">= 2.8.4"])
       s.add_runtime_dependency(%q<thor>, [">= 0.14.3"])
     else
       s.add_dependency(%q<thoughtbot-shoulda>, [">= 2.11.1"])
       s.add_dependency(%q<andand>, [">= 1.3.1"])
       s.add_dependency(%q<yajl-ruby>, [">= 0"])
       s.add_dependency(%q<hashie>, [">= 0.4.0"])
-      s.add_dependency(%q<msgpack>, [">= 0.4.3"])
-      s.add_dependency(%q<facets>, [">= 2.8.4"])
       s.add_dependency(%q<thor>, [">= 0.14.3"])
     end
   else
@@ -72,8 +65,6 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<andand>, [">= 1.3.1"])
     s.add_dependency(%q<yajl-ruby>, [">= 0"])
     s.add_dependency(%q<hashie>, [">= 0.4.0"])
-    s.add_dependency(%q<msgpack>, [">= 0.4.3"])
-    s.add_dependency(%q<facets>, [">= 2.8.4"])
     s.add_dependency(%q<thor>, [">= 0.14.3"])
   end
 end
