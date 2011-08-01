@@ -67,10 +67,6 @@ module FCG
           render :json => objekt, :status => (opts[:status] || :ok)
         end
   
-        def log(msg)
-          Rails.logger.debug  "### #{msg}"
-        end
-  
       	def clear_cookies(c)
       	  cookies[c] = { :value => nil, :domain => ".#{request.domain}", :path => '/', :expires => Time.at(-1000) }
       	end
@@ -105,7 +101,6 @@ module FCG
           end
         end
       end
-      
     end
   end
 end
